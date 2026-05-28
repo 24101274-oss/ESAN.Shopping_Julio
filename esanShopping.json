@@ -1,0 +1,258 @@
+{
+  "info": {
+    "name": "esanShopping",
+    "description": null,
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "Visualizar",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:5170/api/Category/10",
+              "protocol": "http",
+              "host": [
+                "localhost:5170"
+              ],
+              "path": [
+                "api",
+                "Category",
+                "10"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Actualizar",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:5170/api/Category/11",
+              "protocol": "http",
+              "host": [
+                "localhost:5170"
+              ],
+              "path": [
+                "api",
+                "Category",
+                "11"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 11,\n  \"description\": \"S25 ULTRA PRO MAX\",\n  \"isActive\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Agregar",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:5170/api/Category",
+              "protocol": "http",
+              "host": [
+                "localhost:5170"
+              ],
+              "path": [
+                "api",
+                "Category"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n    \"description\": \"Iphone 18 pro max\",\n    \"isActive\": true,\n    \"products\": []\n\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:5170/api/Category/10",
+              "protocol": "http",
+              "host": [
+                "localhost:5170"
+              ],
+              "path": [
+                "api",
+                "Category",
+                "10"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "Visualizar",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:5170/api/Product",
+              "protocol": "http",
+              "host": [
+                "localhost:5170"
+              ],
+              "path": [
+                "api",
+                "Product"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Actualizar",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:5170/api/Product/1",
+              "protocol": "http",
+              "host": [
+                "localhost:5170"
+              ],
+              "path": [
+                "api",
+                "Product",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": " {\n    \"id\": 1,\n    \"description\": \"Samsung Galaxy S21\",\n    \"imageUrl\": \"https://www.example.com/samsung-galaxy-s21.jpg\",\n    \"stock\": 10,\n    \"price\": 899.99,\n    \"discount\": 0,\n    \"categoryId\": 1,\n    \"isActive\": true,\n    \"category\": null,\n    \"favorites\": [],\n    \"orderDetails\": [],\n    \"productDetails\": []\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Agregar",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:5170/api/Product",
+              "protocol": "http",
+              "host": [
+                "localhost:5170"
+              ],
+              "path": [
+                "api",
+                "Product"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": " {\n    \"description\": \"Samsung Galaxy S26 ULTRA\",\n    \"imageUrl\": \"https://www.example.com/samsung-galaxy-s21.jpg\",\n    \"stock\": 10,\n    \"price\": 3000.99,\n    \"discount\": 0,\n    \"categoryId\": 1,\n    \"isActive\": true,\n    \"category\": null,\n    \"favorites\": [],\n    \"orderDetails\": [],\n    \"productDetails\": []\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:5170/api/Category/:ID",
+              "protocol": "http",
+              "host": [
+                "localhost:5170"
+              ],
+              "path": [
+                "api",
+                "Category",
+                ":ID"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "key": "ID",
+                  "value": "17"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": []
+}
